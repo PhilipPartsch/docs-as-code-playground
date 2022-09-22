@@ -1,1 +1,5 @@
-
+sphinx-rtd-theme
+sphinxcontrib-needs
+sphinx-needs
+sphinxcontrib-plantuml
+sphinx-test-reports
