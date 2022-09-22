@@ -12,7 +12,7 @@ version = '0.1.0'
 # -- General configuration
 
 extensions = [
-    'sphinx-needs',
+    'sphinx_needs',
     'sphinxcontrib.plantuml',
     #'sphinx.ext.intersphinx',
 ]
