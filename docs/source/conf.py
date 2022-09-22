@@ -30,7 +30,7 @@ html_theme = 'sphinx_rtd_theme'
 epub_show_urls = 'footnote'
 
 # sphinxcontrib.plantuml configuration
-tool_folder = os.path.join(os.getcwd(), "utils")
+tool_folder = os.path.join(os.getcwd(), "tools")
 plantuml_path = os.path.join(tool_folder, "plantuml.jar")
 plantuml = 'java -Djava.awt.headless=true -jar %s' % plantuml_path
 
