@@ -5,9 +5,9 @@ import sys
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Docs-As-Code Playground'
+copyright = '2022, PhilipPartsch'
+author = 'PhilipPartsch'
 
 release = '0.1'
 version = '0.1.0'
@@ -33,6 +33,7 @@ epub_show_urls = 'footnote'
 plantuml_path = os.path.join(os.path.dirname(__file__), "..", "tools", "plantuml.jar")
 print (plantuml_path)
 plantuml = 'java -Djava.awt.headless=true -jar %s' % plantuml_path
+plantuml_output_format = 'svg'
 
 # sphinx_needs configuration
 needs_id_regex = '^[A-Za-z0-9_]{3,}'
