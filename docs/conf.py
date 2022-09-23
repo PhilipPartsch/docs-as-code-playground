@@ -40,7 +40,7 @@ local_plantuml_path = os.path.join(os.path.dirname(__file__), "_tools", "plantum
 
 print ('plantuml')
 print (local_plantuml_path)
-print (os.listdir(local_plantuml_path))
+print (os.listdir(os.path.join(os.path.dirname(__file__), "_tools")))
 print (os.path.isfile(local_plantuml_path))
 print (sys.path)
 print ('plantuml')
