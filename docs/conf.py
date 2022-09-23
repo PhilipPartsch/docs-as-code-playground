@@ -42,6 +42,7 @@ print ('plantuml')
 print (local_plantuml_path)
 print (os.listdir(os.path.join(os.path.dirname(__file__), "_tools")))
 print (os.path.isfile(local_plantuml_path))
+print (os.access(local_plantuml_path, os.X_OK))
 print (sys.path)
 print ('plantuml')
 
