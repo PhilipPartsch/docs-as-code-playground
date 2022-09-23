@@ -30,7 +30,7 @@ html_theme = 'sphinx_rtd_theme'
 epub_show_urls = 'footnote'
 
 # sphinxcontrib.plantuml configuration
-plantuml_path = os.path.join(os.path.dirname(__file__), "..", "tools", "plantuml.jar")
+plantuml_path = os.path.join(os.path.dirname(__file__), "_tools", "plantuml.jar")
 print (plantuml_path)
 plantuml = 'java -Djava.awt.headless=true -jar %s' % plantuml_path
 plantuml_output_format = 'svg'
