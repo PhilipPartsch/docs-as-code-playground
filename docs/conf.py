@@ -37,7 +37,13 @@ epub_show_urls = 'footnote'
 
 # local_plantuml_path is from https://github.com/useblocks/sphinx-needs/blob/master/docs/conf.py
 local_plantuml_path = os.path.join(os.path.dirname(__file__), "_tools", "plantuml.jar")
+
+print ('plantuml')
 print (local_plantuml_path)
+print (os.listdir(local_plantuml_path))
+print (os.path.isfile(local_plantuml_path))
+print (sys.path)
+print ('plantuml')
 
 if on_rtd:
     # Deactivated using rtd plantuml version as it looks quite old.
