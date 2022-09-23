@@ -14,6 +14,8 @@ version = '0.1.0'
 
 # -- General configuration
 
+on_rtd = os.environ.get("READTHEDOCS") == "True"
+
 extensions = [
     'sphinx_needs',
     'sphinxcontrib.plantuml',
@@ -32,9 +34,18 @@ html_theme = 'sphinx_rtd_theme'
 epub_show_urls = 'footnote'
 
 # sphinxcontrib.plantuml configuration
-plantuml_path = os.path.join(os.path.dirname(__file__), "_tools", "plantuml.jar")
-print (plantuml_path)
-plantuml = 'java -Djava.awt.headless=true -jar %s' % plantuml_path
+
+# local_plantuml_path is from https://github.com/useblocks/sphinx-needs/blob/master/docs/conf.py
+local_plantuml_path = os.path.join(os.path.dirname(__file__), "_tools", "plantuml.jar")
+print (local_plantuml_path)
+
+if on_rtd:
+    # Deactivated using rtd plantuml version as it looks quite old.
+    # plantuml = 'java -Djava.awt.headless=true -jar /usr/share/plantuml/plantuml.jar'
+    plantuml = f"java -Djava.awt.headless=true -jar {local_plantuml_path}"
+else:
+    plantuml = f"java -jar {local_plantuml_path}"
+
 plantuml_output_format = 'svg'
 
 # sphinx_needs configuration
