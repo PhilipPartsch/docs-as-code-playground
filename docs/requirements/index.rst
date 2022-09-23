@@ -21,7 +21,7 @@ Overview
 ********
 
 .. needflow:: Requirement structure
-   :filter: `type=='cust_req' or type=='sys_req' or type=='sw_req'`
+   :types: cust_req, sys_req, sw_req
    :show_link_names:
    :show_filters:
 
