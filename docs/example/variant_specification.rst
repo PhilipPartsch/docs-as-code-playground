@@ -2,6 +2,21 @@
 Example how to use variant in specifications
 ############################################
 
+.. package:: P1
+   :id: P_P1
+
+   .. comp:: C1
+      :id: C_C1
+      :satisfied_by: P_P1
+
+   .. needarch::
+      :scale: 50
+      :align: center
+
+      {{uml(need().id)}} {
+      {{import("satisfied_by_back")}}
+      }
+
 .. sys_req:: OS
    :id: SYSRQ_DETECT_OS
    :status: [hw_ARM and os_LINUX]: new, os_MAC: new2, os_LINUX: accepted, os_Windows: test, unknown
