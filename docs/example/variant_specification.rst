@@ -13,7 +13,7 @@ Example how to use variant in specifications
       :scale: 50
       :align: center
 
-      {{uml(need().id)}} {
+      {{uml("P_P1")}} {
       {{import("satisfied_by_back")}}
       }
 
